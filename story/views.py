@@ -5,3 +5,7 @@ from django.shortcuts import render
 
 def Background(request):
     return render(request, 'background.html')
+
+
+def leave(request):
+    return render(request, 'leave.html')
