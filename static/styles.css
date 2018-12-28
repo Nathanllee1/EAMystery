@@ -1,11 +1,10 @@
 @media (min-width: 20px) {
     .card {
         width: 100%;
-        margin-bottom: 20px;
         position: relative;
         word-wrap: break-word;
         border: none;
-        margin-bottom: 40px;
+        margin-bottom: 90px;
     }
 }
 
@@ -38,11 +37,10 @@ img {
 }
 
 .credits {
-    position: absolute;
     bottom: 8px;
-    left: 8px;
+    right: 8px;
     font-size: 12px;
-
+    text-align: right;
 }
 
 h1 {
