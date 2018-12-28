@@ -4,7 +4,14 @@
         position: relative;
         word-wrap: break-word;
         border: none;
-        margin-bottom: 90px;
+        margin-bottom: 110px;
+    }
+    .credits {
+
+        bottom: 8px;
+        right: 8px;
+        font-size: 12px;
+        text-align: right;
     }
 }
 
@@ -18,6 +25,14 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         position: relative;
     }
+
+    .credits {
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    font-size: 12px;
+    text-align: right;
+    }
 }
 
 
@@ -28,7 +43,7 @@ h5 {
 }
 
 img {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     margin-top: 0px;
 }
 
@@ -36,12 +51,7 @@ img {
     margin-bottom: 10px;
 }
 
-.credits {
-    bottom: 8px;
-    right: 8px;
-    font-size: 12px;
-    text-align: right;
-}
+
 
 h1 {
     margin-bottom: 20px;
