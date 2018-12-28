@@ -2,6 +2,12 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Test the Red Liquid</h1>
+    <h5>You test the Liquid. It is Zack and Lillian’s Blood. </h5>
+
+
+    <a href="{% url 'investigateot' %}" class="btn btn-primary">Continue investigating</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict someone</a>
+
 {% endblock content %}
-    
+        

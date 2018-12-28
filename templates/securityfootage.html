@@ -2,6 +2,15 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Security Footage</h1>
+
+    <h5>You look at the OT security footage, but cannot make out a face. All you can see is a hooded figure wearing a Tech Techies sweatshirt. </h5>
+
+
+    <a href="{% url 'continueinvestigating' %}" class="btn btn-primary">Continue Investigating</a>
+    <a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+    <a href="{% url 'dnaevidence' %}" class="btn btn-primary">Go back</a>
+
+
 {% endblock content %}
-    
+        

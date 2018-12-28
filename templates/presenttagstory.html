@@ -2,6 +2,13 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Story on present tag</h1>
+    <h5>Kilo-meters away in the hills, the Alpha male wolf migrated to India.</h5>
+    <h5>Mike the hunter tracked the wolf, his Uniform keeping him hidden in the trees. Romeo flew across the Delta to meet him; after meeting up they hear a faint Echo of a wolf call. Romeo chases after the wolf, remembering his childhood hunting trips with his father in the Sierras.</h5>
+
+
+    <a href="{% url 'investigateot' %}" class="btn btn-primary">Continue Investigating</a>
+    <a href="{% url 'handwriting' %}" class="btn btn-primary">Analyze the Handwriting</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+
 {% endblock content %}
-    

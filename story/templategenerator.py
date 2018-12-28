@@ -8,47 +8,45 @@ for file in filelist:
     if userchoice == '':
         filename = file[:-5]
 
-        htmlfile = open(file, 'w')
+        htmlfile = open(filedir + file, 'w')
 
-        formattedtitle = '<h1>' + filename + '</h1>'
+        formattedtitle = input('Title: ')
 
         formattedparagraph = ''''''
         while True:
             paragraph = input('Paragraph: ')
             if paragraph == '':
                 break
-            paragraph = '<h5>' + paragraph + '</h5>'
+            paragraph = '<h5>' + paragraph + '</h5>\n'
             formattedparagraph = formattedparagraph + paragraph + '\n'
 
         formattedbuttonlist = ''''''
 
         while True:
             button = input('Button Name: ')
-            buttonurl = button.replace(" ", "").lower()
-            if button or buttonurl == '':
+            buttonurl = input('Button URL: ')
+            if button == '':
                 break
-            formattedbutton = '<a href=\"{% url \'%s\' %}\" class=\"btn btn-primary\">%s</a>' % (buttonurl, button)
+            formattedbutton = '<a href=\"{{% url \'{}\' %}}\" class=\"btn btn-primary\">{}</a>\n'.format(buttonurl, button)
             print(formattedbutton)
             formattedbuttonlist = formattedbuttonlist + formattedbutton
-
+        print(formattedtitle, formattedparagraph, formattedbuttonlist)
         htmltemplate = '''
-{% extends 'index.html' %}
+{{% extends 'index.html' %}}
 
-{% block content %}
-    %s
-    %s
-    %s
-{% endblock content %}
-
-        ''' % (str(formattedtitle), str(formattedparagraph), str(formattedbuttonlist))
-
+{{% block content %}}
+    {}
+    {}
+    {}
+{{% endblock content %}}
+        '''.format(formattedtitle, formattedparagraph, formattedbuttonlist)
+        print(htmlfile)
         print(htmltemplate)
         userinput = input("Continue? ")
         if userinput == 'yes':
             htmlfile.write(htmltemplate)
+            htmlfile.close()
         else:
             break
     else:
         continue
-
-

@@ -2,6 +2,14 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Voiceprint Analysis</h1>
+    <h5>You compare the recording with samples of Chloe, Nathan, Nicola, Zofia, and Kai saying I did it. </h5>
+
+<h5>Nicola and Chloe’s voices have the most similarity to the tape but the recording has been modified too far to give conclusive results. </h5>
+
+
+    <a href="{% url 'investigateot' %}" class="btn btn-primary">Continue Investigating</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+    <a href="{% url 'dnaevidence' %}" class="btn btn-primary">Go back</a>
+
 {% endblock content %}
-    

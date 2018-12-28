@@ -62,7 +62,7 @@ urlpatterns = [
     path('voiceprintanalysis', views.voiceprintanalysis, name='voiceprintanalysis'),
 
 
-    path('convictionform', views.convictionform, name='convictionform'),
+    path('convictform', views.convictionform, name='convictform'),
 
 
     path('dnaevidence', views.dnaevidence, name='dnaevidence'),

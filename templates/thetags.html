@@ -2,6 +2,13 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>The Tags</h1>
+    <h5>The tag contains a handwritten story</h5>
+
+
+    <a href="{% url 'presenttagstory' %}" class="btn btn-primary">Look at the story</a>
+<a href="{% url 'handwriting' %}" class="btn btn-primary">Look at the handwriting</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict someone</a>
+
 {% endblock content %}
-    
+        

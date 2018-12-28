@@ -2,6 +2,9 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Chop Saw Finger Prints</h1>
+    <h5>You find Nicola, Toby and Milo’s fingerprints on the chop saw.</h5>
+    <a href="{% url 'techtechiesshop' %}" class='btn btn-primary'>Perform more tests In the Techie Shop</a>
+    <a href="{% url 'bloodonchopsaw' %}" class="btn btn-primary">Continue Investigating OT</a>
+    <a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
 {% endblock content %}
-    

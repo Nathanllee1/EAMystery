@@ -2,6 +2,16 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Investigate Tech</h1>
+    <h5>You decide you need to look for more clues. You investigate around OT:</h5>
+
+
+    <a href="{% url 'returntocrimescene' %}" class="btn btn-primary">Go back to look more at the crime scene</a>
+<a href="{% url 'techtechiesshop' %}" class="btn btn-primary">Investigate Tech Techie Shop</a>
+<a href="{% url 'otbasement' %}" class="btn btn-primary">Investigate the OT basement</a>
+<a href="{% url 'eabathroom' %}" class="btn btn-primary">Investigate the Engineering Academy Bathroom</a>
+<a href="{% url 'interviewsuspects' %}" class="btn btn-primary">Interview Suspects</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+
 {% endblock content %}
-    
+        

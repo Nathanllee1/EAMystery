@@ -2,6 +2,21 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Crime Scene Investigation</h1>
+    <h5>You decide to investigate the scene further.</h5>
+
+<h5>Looking closer at the tree you notice the red liquid slowly coating the floor is blood and you have stumbled upon a murder scene. Other than the ominous leaking coming from the presents, you notice certain boxes are marked with gift tags and ribbons rather than haphazardly taped together.</h5>
+
+<h5>You look closer and open one of the presents closest to you and it contains a human arm, severed at the wrist and shoulder and still disturbingly warm.</h5>
+
+<h5>This is definitely a murder</h5>
+
+<h5>What do you do?</h5>
+
+
+    <a href="{% url 'thetags' %}" class="btn btn-primary">Look at the tags on the marked presents</a>
+<a href="{% url 'contentsoftheboxes' %}" class="btn btn-primary">Look Inside the marked Boxes</a>
+<a href="{% url 'dnaevidence' %}" class="btn btn-primary">Use DNA identification techniques to figure out who the body belongs to</a>
+
 {% endblock content %}
-    
+        

@@ -2,6 +2,23 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>You interview Chloe, Kai, Nicola, Nathan, and Zofia:</h1>
+    <h5>- You learn that Chloe and Nicola are both in Tech Techies</h5>
+
+<h5>- You learn that the stress of college applications has really been getting to Nathan, Kai, and Nicola</h5>
+
+<h5>- You learn that Nathan went to Prom with Lillian</h5>
+
+<h5>- You learn that Nicola has a beef with Kai over a pun they made. </h5>
+
+<h5>- You learn that both Kai and Zack are applying to MIT</h5>
+
+<h5>- Zack and Lillian are in robotics and have been working on a robot that can beat Randy at Chess</h5>
+
+
+    <a href="{% url 'continueinvestigating' %}" class="btn btn-primary">Go back to the engineering room</a>
+    <a href="{% url 'investigateot' %}" class="btn btn-primary">Continue Investigating Tech</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+
 {% endblock content %}
-    
+        

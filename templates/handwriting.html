@@ -2,6 +2,31 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    {% load static %}
+    <h1>Handwriting Analysis</h1>
+    <h5>You analyze the handwriting against samples of work in the academy.</h5>
+
+<h5>Writing on the Tag</h5>
+    <img src="{% static 'writingontag.png' %}">
+<h5>Samples</h5>
+    <img src="{% static 'samples.png' %}">
+
+<h5>Order of the samples (ignore the solitary “the quick brown” found after Kai’s sample)</h5>
+
+<h5>Kai</h5>
+
+<h5>Nicola</h5>
+
+<h5>Chloe</h5>
+
+<h5>Lillian</h5>
+
+<h5>Other samples were unattainable</h5>
+
+
+    <a href="{% url 'investigateot' %}" class="btn btn-primary">Continue Investigation</a>
+<a href="{% url 'presenttagstory' %}" class="btn btn-primary">Read the Story Written on the back of the tag</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+
 {% endblock content %}
-    
+        

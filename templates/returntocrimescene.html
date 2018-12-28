@@ -2,6 +2,13 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Return to the crime scene</h1>
+
+    <h5>You return to the crime scene. What would you like to investigate?</h5>
+
+
+    <a href="{% url 'fingerprintsonpackages' %}" class="btn btn-primary">Fingerprint Analysis</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+
 {% endblock content %}
-    
+        

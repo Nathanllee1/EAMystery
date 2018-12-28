@@ -2,6 +2,13 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Fingerprints on Packages</h1>
+    <h5>You lift prints and analyze them in comparison to OT records. There are no detectable fingerprints on the packages but you find Randy’s, Nicola’s, Nathan’s and Zsofia’s fingerprints on the table next to the packages. </h5>
+
+
+    <a href="{% url 'investigateot' %}" class="btn btn-primary">Continue Investigating</a>
+    <a href="{% url 'dnaevidence' %}" class="btn btn-primary">Go back</a>
+    <a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+
 {% endblock content %}
-    
+        

@@ -2,6 +2,12 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>OT Basement</h1>
+    <h5>You find a rat, a dirty microwave and a broken spork. </h5>
+
+
+    <a href="{% url 'investigateot' %}" class="btn btn-primary">Continue Investigating</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+
 {% endblock content %}
-    
+        

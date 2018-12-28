@@ -2,6 +2,19 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    {% load static %}
+    <h1>Contents of the Boxes</h1>
+    <h5>You open a box that appears to be a bloody chocolate box. Inside are chunks of tissue in each slot. But what are the chunks of flesh from?</h5>
+    <img src="{% static 'choclatebox.png' %}">
+    <h5>You perform DNA analysis on each piece and, after finding that they are human and the same as the other body parts, label the pieces with XY chromosomes male and the XX ones female.</h5>
+    <h5>1st present’s Contents:</h5>
+    <img src="{% static 'firstpresent.png' %}">
+    <h5>2nd present's contents</h5>
+    <img src="{% static 'secondpresent.png' %}">
+    <h5>3rd present's contents</h5>
+    <img src="{% static 'thirdpresent.png' %}">
+
+    <a href='{% url "investigateot" %}' class='btn btn-primary'>Continue Investigating</a>
+    <a href='{% url "convictform" %}' class="btn btn-primary">Convict Someone</a>
 {% endblock content %}
     

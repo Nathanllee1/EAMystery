@@ -2,6 +2,14 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Continue Investigating</h1>
+    <h5>What do you want to look into next:</h5>
+
+
+    <a href="{% url 'thetags' %}" class="btn btn-primary">Look at the tags on the marked presents</a>
+<a href="{% url 'contentsoftheboxes' %}" class="btn btn-primary">Look Inside the marked Boxes</a>
+<a href="{% url 'dnaevidence' %}" class="btn btn-primary">Use DNA identification techniques to figure out who the body belongs to</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict someone</a>
+
 {% endblock content %}
-    
+        

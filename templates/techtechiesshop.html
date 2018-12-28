@@ -2,6 +2,14 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>Tech Techies Shop</h1>
+    <h5>You enter the Tech Techies shop and find blood splatters all around the chop saw. </h5>
+
+
+    <a href="{% url 'chopsawfingerprints' %}" class="btn btn-primary">Look for Fingerprints on the Chop Saw</a>
+<a href="{% url 'bloodonchopsaw' %}" class="btn btn-primary">Check the DNA of the Blood Splatter</a>
+<a href="{% url 'investigateot' %}" class="btn btn-primary">Continue Investigating</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+
 {% endblock content %}
-    
+        

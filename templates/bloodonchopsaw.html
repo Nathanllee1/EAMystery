@@ -2,10 +2,12 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <h1>Blood on the Chop Saw</h1>
-    <h5>You bring a sample of the blood spatter to a Lab. It is Lillian and Zack’s blood.</h5>
-    <a href='{% url 'techtechiesshop' %}' class='btn btn-primary'>Perform more tests In the Techie Shop</a>
-    <a href="{% url 'investigateot' %}" class='btn btn-primary'>Continue Investigating OT</a>
-    <a href="{% url 'convictionform' %}" class='btn btn-primary'>Convict Someone</a>
+    <h1>Blood on Chop Saw</h1>
+    <h5>You bring a sample of the blood spatter to a Lab. It is Lillian and Zack’s blood. </h5>
+
+    <a href="{% url 'techtechiesshop' %}" class="btn btn-primary">Perform more tests In the Techie Shop</a>
+    <a href="{% url 'investigateot' %}" class="btn btn-primary">Continue Investigating OT</a>
+    <a href="{% url 'convictform' %}" class="btn btn-primary">Convict Someone</a>
+
 {% endblock content %}
-    
+        

@@ -2,6 +2,13 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <a href='' class='btn btn-primary'></a>
+    <h1>EA Bathroom</h1>
+    <h5>The sink is covered in red liquid.</h5>
+
+
+    <a href="{% url 'testtheredliquid' %}" class="btn btn-primary">Test the red liquid</a>
+<a href="{% url 'investigateot' %}" class="btn btn-primary">Continue Investigating</a>
+<a href="{% url 'convictform' %}" class="btn btn-primary">Convict someone</a>
+
 {% endblock content %}
-    
+        
